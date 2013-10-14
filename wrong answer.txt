@@ -1,2 +1,4 @@
 1.有可能是你的字符数组开小了（正确的大小比这个大，不是预留的不够），并用gets读入，这种情况按说是runtime error，
 不过在hust oj上我曾遇到这种情况的wa。
+2.wa有可能是你的continue或者break的使用，使得后面其实还有操作的，结果由于continue或者break的原因，导致后面的操作没有完成，
+而你的continue或者break只是想中断当前的一部分操作。
